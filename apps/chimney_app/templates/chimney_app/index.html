@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>National Chimney, Inc.</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The line above tells Django to be ready to listen for static files -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'chimney_app/css/style.css' %}" media="screen" title="no title"  charset="utf-8">
+
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="tel:914-376-1288"><span class="glyphicon glyphicon-phone"></span> 914-376-1288</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#pricing">PRICING</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="jumbotron text-center">
+    <h1>National Chimney, Inc.</h1>
+    <p>We Serve Yonkers and Westchester area.</p>
+    <!--
+      <form>
+        <div class="input-group">
+          <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-danger">Subscribe</button>
+          </div>
+        </div>
+      </form>
+    -->
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8">
+            <h2>About National Chimney, Inc.</h2><br>
+            <h4>National Chimney, INC. is a full service, chimney and fireplace repair contractor. We've been providing
+                residential and commercial clients in Yonkers and Weschester area since 2013. We are regarded as leader
+                when it comes to Chimney Cleaning & Chimney Repair in the Yonkers and Westchester area. Our company
+                offers commercial and residential chimney cleaning & chimney repairs. We regulate each chimney cleaning
+                or chimney repair project within budget and in a practical time-frame. Call or Text us 24 hours a day!
+                National Chimney, Inc. is fully licensed, insured.</h4><br>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="{% static 'chimney_app/images/chimney_three.jpg' %}" alt="Paris" width="400" height="300" />
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="M_flex" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8">
+            <h2>One of our Greatest Specialties is, Stainless steel liners. </h2><br>
+            <p><h4>Stainless steel liners are incredibly popular because of their durability and longevity. These liners
+            are designed to take the heat and byproducts of just about every fuel type, and can be retrofitted into
+            virtually any chimney. The stainless steel liners we typically install are oval or round and available in a
+            variety of sizes. We offer both rigid and flexible stainless steel liner options, so even unique chimneys
+            can be relined with stainless steel.</h4></p>
+            <p><h4>Our M-Flex lining system is crafted from the highest-quality steel on the market, and is designed to
+            withstand even the highest temperatures. It also resists the damage that typically results from the acids
+            and freeze-thaw cycles associated with combustion and the elements.</h4></p>
+
+            <!--      <br><button class="btn btn-default btn-lg">Get in Touch</button>-->
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img class="img-responsive" src="{% static 'chimney_app/images/chimney-lining-reliner.jpg' %}" alt="Paris" width="400" height="300" />
+                <img class="img-responsive" src="{% static 'chimney_app/images/stainless-steel-chimney-liners.jpg' %}" alt="Paris" width="400" height="300" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> We ensure the job is carried out to perfection when we clean or repair your chimney. Whenever you hire National Chiment, Inc. as your full service chimney sweeper in White Plains, there is no doubt that we'll stick to New York state and the local city building codes carefully when it comes to having a chimney inspection. Chimney Cleaning Service:</h4><br>
+      <p><strong>VISION:</strong> Our vision not only does National Chimney, Inc. provide you with the very best chimney sweep service and customer care, they're also very affordable and will work together with you to see to it your chimney sweep job is conducted right without breaking your bank account.</p>
+    </div>
+  </div>
+</div>
+-->
+
+<!-- Container (Services Section) -->
+<div id="pricing" class="container-fluid">
+    <div class="text-center">
+        <h2>Services</h2>
+        <h4>National Chimney, Inc. offers commercial and residential chimney cleaning & chimney repairs</h4>
+    </div>
+    <div class="row slideanim">
+        <div class="col-sm-4 col-xs-12">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <h1>Basic</h1>
+                </div>
+                <div class="panel-body">
+                    <p>Chimney Cleaning</p>
+                    <p>Inspections</p>
+                    <p>Chimney Sweeping</p>
+                    <p>Video Camera Inspections</p>
+                    <p>Creosote Removal</p>
+                    <p>Wood Burning Stove Flues</p>
+                    <p>Hot Water Heater Flues</p>
+                    <p>Flue Liners</p>
+                    <p>Standard Size Caps</p>
+                    <p>Copper Flashing</p>
+                </div>
+                <!--
+                        <div class="panel-footer">
+                          <h3>$19</h3>
+                          <h4>per month</h4>
+                          <button class="btn btn-lg">Sign Up</button>
+                        </div>
+                -->
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <h1>Repair</h1>
+                </div>
+                <div class="panel-body">
+                    <p>Resolve Smoke Drafting Issues</p>
+                    <p>Solve Water Leaks</p>
+                    <p>Rebuild fireboxes</p>
+                    <p>Rebuild Brick Chimneys</p>
+                    <p>Damper Repairs</p>
+                    <p>Exhausto Fans</p>
+                    <p>Wood Burning Stoves</p>
+                    <p>Fireplace Glass Doors</p>
+                    <p>Metal Smoke Stacks</p>
+                    <p> Top and Bottom Dampers</p>
+
+                </div>
+                <!--
+                        <div class="panel-footer">
+                          <h3>$29</h3>
+                          <h4>per month</h4>
+                          <button class="btn btn-lg">Sign Up</button>
+                        </div>
+                -->
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <h1>Specialty</h1>
+                </div>
+                <div class="panel-body">
+                    <p>Expert Masonry Work</p>
+                    <p>Stainless Steel Liners</p>
+                    <p>Animal and Nest Removal</p>
+                    <p>Waterproofing</p>
+                    <p>Wood and Gas Burning Fireplaces</p>
+                    <p>New Chimneys and Fireplaces Built</p>
+                    <p>Custom Made Caps</p>
+                    <p>Turbine Caps</p>
+                    <p>Firebox Inserts</p>
+                    <p> Custom Made Chase Pans</p>
+                </div>
+                <!--
+                        <div class="panel-footer">
+                          <h3>$49</h3>
+                          <h4>per month</h4>
+                          <button class="btn btn-lg">Sign Up</button>
+                        </div>
+                -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+    <h2>Quality Service You Can Trust.</h2>
+    <!--  <h4>What we offer</h4>-->
+    <br>
+    <div class="row slideanim">
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-usd logo-small"></span>
+            <h4>The very best Affordable chimney service.</h4>
+            <!--      <p>Lorem ipsum dolor sit amet..</p>-->
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-heart logo-small"></span>
+            <h4>Responsive and dedicated customer support.</h4>
+            <!--      <p>Responsive and dedicated customer support</p>-->
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-lock logo-small"></span>
+            <h4>No job is too big, or too small.</h4>
+            <!--      <p>Lorem ipsum dolor sit amet..</p>-->
+        </div>
+    </div>
+    <br><br>
+    <div class="row slideanim">
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-leaf logo-small"></span>
+            <h4>Comply with all NY and NFPA safety standards.</h4>
+            <!--      <p>Comply with all NFPA safety standards.</p>-->
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-certificate logo-small"></span>
+            <h4>LICENSED, INSURED AND CERTIFIED.</h4>
+            <!--      <p>Lorem ipsum dolor sit amet..</p>-->
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-wrench logo-small"></span>
+            <h4 style="color:#303030;">Residential and commercial clients.</h4>
+            <!--      <p>Lorem ipsum dolor sit amet..</p>-->
+        </div>
+    </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+    <h2>Portfolio</h2><br>
+    <h4>What we have created</h4>
+    <div class="row text-center slideanim">
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img class="img-responsive" src="{% static 'chimney_app/images/chimney_three.jpg' %}" alt="Paris" width="400" height="300" />
+                <p><strong>White Plains</strong></p>
+                <p>Yes, we built White Plains</p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img class="img-responsive" src="{% static 'chimney_app/images/chimney_one.jpg' %}" alt="Paris" width="400" height="300" />
+                <p><strong>Yonkers</strong></p>
+                <p>We built Yonkers</p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img class="img-responsive" src="{% static 'chimney_app/images/chimney_two.jpg' %}" alt="Paris" width="400" height="300" />
+                <p><strong>Scarsdale</strong></p>
+                <p>Yes, Scarsdale is ours</p>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <h2>What our customers say</h2>
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span>
+                </h4>
+            </div>
+            <div class="item">
+                <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
+            </div>
+            <div class="item">
+                <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span>
+                </h4>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row text-center">
+        <div class="col-sm-12">
+            <p>For a Faster responce text us your information and we will get back to you promptly to schedule your
+                service.</p>
+            <!--      <p>Contact us and we'll get back to you within 24 hours.</p>-->
+            <p><span class="glyphicon glyphicon-map-marker"></span> 844 Nepperhan Ave, Yonkers, NY 10703</p>
+            <p><a href="tel:914-376-1288"><span class="glyphicon glyphicon-phone"></span> 914-376-1288</a></p>
+            <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+        </div>
+        <!--
+            <div class="col-sm-7 slideanim">
+              <div class="row">
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+              </div>
+              <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+              <div class="row">
+                <div class="col-sm-12 form-group">
+                  <button class="btn btn-default pull-right" type="submit">Send</button>
+                </div>
+              </div>
+            </div>
+        -->
+    </div>
+</div>
+
+<div id="googleMap" style="height:400px;width:100%;"></div>
+
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+    var myCenter = new google.maps.LatLng(40.953889, -73.876935);
+
+    function initialize() {
+        var mapProp = {
+            center: myCenter,
+            zoom: 12,
+            scrollwheel: false,
+            draggable: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+        var marker = new google.maps.Marker({
+            position: myCenter,
+        });
+
+        marker.setMap(map);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<div class="footer-callout"></div>
+<footer id="colophon-main" class="site-footer-main" role="contentinfo">
+    <div id="footer_content" class="container-fluid" style="padding-bottom: 15px;">
+        <div class="row">
+            <div class="col-sm-4">
+                <p><strong>National Chimney, Inc.</strong></p>
+                <p>844 Nepperhan Ave</p>
+                <p>Yonkers, NY 10703</p>
+                <p><a href="tel:914-376-1288"><span class="glyphicon glyphicon-phone"></span> 914-376-1288</a></p>
+            </div>
+            <div class="col-sm-4">
+                <p><strong>Licenses</strong></p>
+                <p>Yonkers # </p>
+                <p>Westchester #</p>
+            </div>
+            <div class="col-sm-4">
+                <p><strong>Other Information</strong></p>
+                <!--
+                        <p>Terms of Service</p>
+                        <p>Privacy Policy</p>
+                -->
+                <p>Copyright © 2017 National Chimney, Inc.</p>
+                <p>Accepted forms of payment:</p>
+                <br/>
+                <img src="http://certifiedchimney.drivendigitalsite.com/wp-content/uploads/sites/13/2016/04/cards.png"
+                     class="img-responsive">
+            </div>
+            <div class="container-fluid text-center">
+                <a href="#myPage" title="To Top">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </a>
+                <p>National Chimney INC.</a></p>
+            </div>
+        </div>
+</footer><!-- #colophon -->
+
+
+<script>
+    $(document).ready(function () {
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+
+        $(window).scroll(function () {
+            $(".slideanim").each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+    })
+</script>
+
+</body>
+</html>
